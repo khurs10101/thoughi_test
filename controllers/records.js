@@ -35,8 +35,8 @@ const processResult = async (req, res, next) => {
             prevPage = null
         else
             prevPage = page - 1
-            
-        if (page == 50)
+
+        if (page == totalPages)
             nextPage = null
         else
             nextPage = parseInt(page) + 1
